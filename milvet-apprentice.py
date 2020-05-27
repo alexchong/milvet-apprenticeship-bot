@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 import smtp
-import pages_dict
+from pages_dict import pages_dict
 
 # HTTP GET function
 def http_get(url=''):

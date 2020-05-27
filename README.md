@@ -1,7 +1,7 @@
 # Military Veteran Software Apprenticeship Bot 🎓
 A Python script to web crawl listed static military-veteran apprenticeship pages, for specific keywords that signal open positions, and sends an notification via email if positions are open.
 
-##### Update 27 May 20: Currently rebuilding script with Selenium to address issues with scraping dynamic page content
+#### Update 27 May 20: Currently rebuilding script with Selenium to address issues with scraping dynamic page content
 
 ## Installation
 1. Install dependencies throughp Python binary that will be used for this script

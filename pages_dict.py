@@ -10,6 +10,3 @@ pages_dict = {
     'condition': '0 open jobs'   
   }
 }
-
-#def items():
-#  return pages_dict.items()
