@@ -34,11 +34,11 @@ def task():
     url = data['url']
     page = http_get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
-    crawl = eval(data['crawl'])
+    availability = eval(data['availability'])
     condition = data['condition']
     
     # appends job/apprenticeship info to email message string if availability is detected
-    if condition not in crawl:
+    if condition not in availability:
       companies.append('\n' + key + '\n')
       companies.append("Link: " + url + '\n')
       message = ''.join(companies)

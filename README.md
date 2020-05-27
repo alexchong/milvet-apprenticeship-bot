@@ -1,5 +1,7 @@
 # Military Veteran Software Apprenticeship Bot 🎓
-A Python script to web crawl listed military-veteran apprenticeship pages for specific keywords that signal open apprenticeship positions, and sends an notification via email if positions are open.
+A Python script to web crawl listed static military-veteran apprenticeship pages, for specific keywords that signal open positions, and sends an notification via email if positions are open.
+
+##### Update 27 May 20: Currently rebuilding script with Selenium to address issues with scraping dynamic page content
 
 ## Installation
 1. Install dependencies throughp Python binary that will be used for this script
@@ -19,7 +21,7 @@ $ crontab -e
 3. Write cron job to automate scheduled task to run script
 ```
 # m h dom mon dow command
-* 8 * * * /absolute/path/to/python absolute/path/to/milvet-apprentice.py
+30 8 * * * /absolute/path/to/python absolute/path/to/milvet-apprentice.py
 #
 ```
 
@@ -30,7 +32,7 @@ Reference the following template to append an apprenticeship page to `pages_dict
 pages_dict = {
   'Title': {
     'url': '', # URL to specific apprentice page
-    'crawl': '', # BeautifulSoup.soup.find() command
+    'availability': '', # BeautifulSoup.soup.find() command
     'condition': '' # text string used as signal for unavailable apprentice positions e.g. 'no jobs available at this time' 
   }
 }
